@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens Dinâmicas</title>
+    <style>
+        body{
+            background-color: rgb(151, 250, 250);
+        }
+    </style>
+</head>
+<body>
+    <h1>Imagens Dinâmicas</h1>
+    <p>Trabalharemos com multi imagens com tamanhos diferentes</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivel">
+    </picture>
+<!--Essas telas servem para adaptação de celulares, pcs e etc, no mas-width eu trato essas info 
+sempre na ordem do maior para o menor, deve ser obedecida-->
+<h1>Reproduzir áudios</h1>
+<p style="color: brown;">Vamos aprender a reproduzir áudios em HTML </p>
+<audio src="midia/Silence-for-a-Film-ann-annie.mp3" controls autoplay></audio>
+</body>
+</html>

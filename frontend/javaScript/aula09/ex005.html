@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: rgb(41, 6, 75);
+            color: rgb(100, 10, 10);
+            font: 15pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testando </h1>
+    <hr>
+    <p>Testando por refencias ! </p>
+    <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
+    <p><strong>Treinando...</strong></p>
+    <div id = "msg">Teste...</div>
+    <script>
+        var corpo = window.document.body
+        var p1 = window.document.getElementsByTagName('p')[1] // Consigo ter acesso e selecionar tudo
+          //window.document.write('Está escrito assim: ' + p1.innerText) // para selecionar um paragrafo 
+          p1.style.color = 'white'
+         
+        var d = window.document.getElementById('msg')
+        d.style.background = "white"
+            // eu posso acessar por marca, ID, nome e classe atraves do getElementsBy(aqui vc coloca o nome do que vc vai usar para selecionar, uma das opções acima )
+            //ou poe seleto ex: var d = windoe. document.querySelector('o que vc quer de tag ')
+
+
+    </script>
+</body>
+</html>
